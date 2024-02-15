@@ -18,7 +18,7 @@ namespace Lab10.Data
                 .HasMany(category => category.Articles)
                 .WithOne(article => article.Category)
                 .HasForeignKey(article => article.CategoryId);
-            //modelBuilder.Seed();
+            modelBuilder.Seed();
         }
 
     }
